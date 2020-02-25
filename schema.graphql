@@ -1,0 +1,21 @@
+type Query {
+  listOfStudents: [Student]!
+  listOfCourses: [Course]!
+}
+
+type Mutation {
+  newStudent(id: ID! name: String!): Student
+  newCourse(id: ID! name: String!): Course
+  updateCourse(student_id: ID! course_id: ID!): Course
+}
+
+type Student {
+  id: ID!
+  name: String!
+}
+
+type Course {
+  id: ID!
+  name: String!
+  students: [Student!]!
+}
