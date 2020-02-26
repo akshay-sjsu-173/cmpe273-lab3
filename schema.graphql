@@ -4,14 +4,15 @@ type Query {
 }
 
 type Mutation {
-  newStudent(id: ID! name: String!): Student
-  newCourse(id: ID! name: String!): Course
+  newStudent(name: String! age: Int!): Student
+  newCourse(name: String!): Course
   updateCourse(student_id: ID! course_id: ID!): Course
 }
 
 type Student {
   id: ID!
   name: String!
+  age: Int!
 }
 
 type Course {
