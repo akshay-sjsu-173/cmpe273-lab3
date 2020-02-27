@@ -3,20 +3,6 @@ from ariadne.constants import PLAYGROUND_HTML
 from flask import Flask, request, jsonify
 import resolvers as r
 
-"""students = {
-  "students": [
-    {
-      "id": 1,
-      "name": "Akshay"
-    },
-    {
-      "id": 2,
-      "name: "Kaushik"
-    }
-  ]
-}
-"""
-
 app = Flask(__name__)
 
 type_defs = load_schema_from_path('schema.graphql')
