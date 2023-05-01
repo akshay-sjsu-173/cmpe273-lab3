@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask = "==1.1.1"
+flask = "==2.3.2"
 ariadne = "==0.10.0"
 flask-graphql = "*"
 
